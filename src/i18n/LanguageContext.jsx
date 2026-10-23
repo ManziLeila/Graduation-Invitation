@@ -32,10 +32,6 @@ export function LanguageProvider({ children }) {
     }
   }, []);
 
-  useEffect(() => {
-    document.documentElement.lang = lang;
-  }, [lang]);
-
   const t = useCallback(
     (key) => {
       const value = getNested(translations[lang], key);
@@ -46,6 +42,11 @@ export function LanguageProvider({ children }) {
     },
     [lang],
   );
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    document.title = t('pageTitle');
+  }, [lang, t]);
 
   const value = useMemo(() => ({ lang, setLang, t }), [lang, setLang, t]);
 

@@ -1,5 +1,6 @@
 import config from '../config';
 import { useLanguage } from '../i18n/LanguageContext';
+import { localized } from '../utils/localized';
 import { useReveal } from '../hooks/useReveal';
 import CopyButton from './CopyButton';
 import './Contributions.css';
@@ -14,7 +15,7 @@ function momoUssdHref(number) {
 }
 
 export default function Contributions() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const reveal = useReveal();
   const { bank } = config;
 
@@ -57,10 +58,12 @@ export default function Contributions() {
           <article className="contributions__card">
             <h3 className="contributions__card-title">{t('bankTitle')}</h3>
             <p className="contributions__bank-line">
-              {bank.bank}
+              {localized(bank.bank, lang)}
               {bank.branch ? ` · ${bank.branch}` : ''}
             </p>
+            <p className="contributions__bank-label">{t('bankAccountName')}</p>
             <p className="contributions__bank-line">{bank.accountName}</p>
+            <p className="contributions__bank-label">{t('bankAccountNumber')}</p>
             <div className="contributions__account">
               <span className="contributions__account-number">{bank.accountNumber}</span>
               <CopyButton text={bank.accountNumber} />

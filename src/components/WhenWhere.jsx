@@ -1,6 +1,7 @@
 import config from '../config';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useReveal } from '../hooks/useReveal';
+import { localized } from '../utils/localized';
 import './WhenWhere.css';
 
 function formatDateHeading(dateStr, t) {
@@ -12,15 +13,19 @@ function formatDateHeading(dateStr, t) {
   return `${weekday}, ${day} ${month} ${year}`;
 }
 
-function formatTime(time24) {
+function formatTime(time24, lang, t) {
   const [h, m] = time24.split(':').map(Number);
-  const period = h >= 12 ? 'PM' : 'AM';
-  const hour12 = h % 12 || 12;
-  return `${hour12}:${String(m).padStart(2, '0')} ${period}`;
+  const mm = String(m).padStart(2, '0');
+  if (lang === 'en') {
+    const period = h >= 12 ? t('timePm') : t('timeAm');
+    const hour12 = h % 12 || 12;
+    return `${hour12}:${mm} ${period}`;
+  }
+  return `${String(h).padStart(2, '0')}:${mm}`;
 }
 
 export default function WhenWhere() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const reveal = useReveal();
   const dateHeading = formatDateHeading(config.date, t);
 
@@ -41,11 +46,11 @@ export default function WhenWhere() {
             return (
               <li key={event.key} className="when-where__row">
                 <time className="when-where__time" dateTime={event.time}>
-                  {formatTime(event.time)}
+                  {formatTime(event.time, lang, t)}
                 </time>
                 <div className="when-where__details">
                   <h3 className="when-where__event-title">{title}</h3>
-                  <p className="when-where__venue">{event.venue}</p>
+                  <p className="when-where__venue">{localized(event.venue, lang)}</p>
                   <a
                     href={event.mapUrl}
                     className="when-where__directions"

@@ -22,13 +22,21 @@ const config = {
     {
       key: 'ceremony',
       time: '09:00',
-      venue: '343V+W6H, Kigali',
+      venue: {
+        en: '343V+W6H, Kigali',
+        fr: '343V+W6H, Kigali',
+        rw: '343V+W6H, Kigali',
+      },
       mapUrl: 'https://maps.google.com/?q=343V%2BW6H,+Kigali',
     },
     {
       key: 'reception',
       time: '16:00',
-      venue: 'KK 386 St, Kigali',
+      venue: {
+        en: 'KK 386 St, Kigali',
+        fr: 'KK 386 St, Kigali',
+        rw: 'KK 386 St, Kigali',
+      },
       mapUrl: 'https://maps.google.com/?q=KK+386+St,+Kigali',
     },
   ],
@@ -41,7 +49,11 @@ const config = {
     },
   ],
   bank: {
-    bank: 'Bank of Kigali',
+    bank: {
+      en: 'Bank of Kigali',
+      fr: 'Bank of Kigali',
+      rw: 'Banki ya Kigali',
+    },
     branch: '',
     accountName: 'KEZA MANZI LEILA',
     accountNumber: '100280178343',

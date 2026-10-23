@@ -1,11 +1,12 @@
 import config from '../config';
 import { useLanguage } from '../i18n/LanguageContext';
+import { localized } from '../utils/localized';
 import { useReveal } from '../hooks/useReveal';
 import Countdown from './Countdown';
 import './Hero.css';
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const reveal = useReveal();
 
   return (
@@ -15,6 +16,7 @@ export default function Hero() {
         <h1 id="hero-name" className="hero__name">
           {config.name}
         </h1>
+        <p className="hero__degree">{localized(config.degree, lang)}</p>
         <p className="hero__invitation">{t('heroInvitation')}</p>
         <Countdown />
       </div>

@@ -20,13 +20,22 @@
 }
 
 .hero__name {
-  margin: 0 0 var(--space-lg);
+  margin: 0 0 var(--space-sm);
   font-size: clamp(2.5rem, 10vw, 4.5rem);
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-text);
+}
+
+.hero__degree {
+  margin: 0 0 var(--space-lg);
+  max-width: 32rem;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--color-text-muted);
 }
 
 .hero__invitation {

@@ -4,14 +4,17 @@ import LanguageSwitcher from './LanguageSwitcher';
 import PhotoCarousel from './PhotoCarousel';
 import './PhotoGate.css';
 
-function formatHomeDateLine(dateStr, city) {
-  const [y, m, d] = dateStr.split('-');
-  return `${d} · ${m} · ${y} · ${city}`;
+function formatHomeDateLine(dateStr, city, t) {
+  const d = new Date(`${dateStr}T12:00:00`);
+  const day = d.getDate();
+  const month = t('months')[d.getMonth()];
+  const year = d.getFullYear();
+  return `${day} · ${month} · ${year} · ${city}`;
 }
 
 export default function PhotoGate() {
   const { t } = useLanguage();
-  const dateLine = formatHomeDateLine(config.date, config.city);
+  const dateLine = formatHomeDateLine(config.date, config.city, t);
 
   return (
     <div className="photo-gate">
