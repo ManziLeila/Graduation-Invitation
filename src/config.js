@@ -12,9 +12,9 @@ const config = {
     reception: 180,
   },
   degree: {
-    en: "Bachelor's Degree, Adventist University of Central Africa",
-    fr: "Licence, Université Adventiste d'Afrique Centrale",
-    rw: 'Impamyabumenyi, Kaminuza ya Adventiste mu Afurika yo Hagati',
+    en: "Bachelor's Degree in Software Engineering, Adventist University of Central Africa",
+    fr: "Licence en génie logiciel, Université Adventiste d'Afrique Centrale",
+    rw: 'Impamyabumenyi mu Guhanga Porogaramu, Kaminuza ya Adventiste mu Afurika yo Hagati',
   },
   date: '2026-11-15',
   city: 'Kigali',
@@ -48,6 +48,24 @@ const config = {
     },
   ],
   whatsappNumber: '250786201066',
+  /**
+   * Google Form → linked Sheet. See GOOGLE_FORM_SETUP.md
+   * Leave actionUrl empty until your form is ready.
+   */
+  googleForm: {
+    actionUrl:
+      'https://docs.google.com/forms/d/e/1FAIpQLSemgUtZHPILLJmsUBiZ5RzNLtioCxlxDN9jAI3yvGBT0EtesQ/formResponse',
+    entries: {
+      name: 'entry.891082014',
+      attendance: 'entry.84978969',
+      phone: 'entry.657872678',
+      note: 'entry.794185543',
+    },
+    attendanceOptions: {
+      yes: 'Joyfully accepts',
+      no: 'Regretfully declines',
+    },
+  },
   momo: [
     {
       name: 'Keza Manzi Leila',
