@@ -51,11 +51,13 @@ googleForm: {
 
 Remove `language` from `entries` if you did not add that question.
 
-6. In the form page source, search for `name="fbzx"` and copy the `value` → `fbzx` in `config.js` (required for the website to save rows).
+You do **not** need to copy `fbzx` into `config.js` — the site loads a fresh token on the server when saving each RSVP.
 
 ## 4. Deploy
 
-Push to GitHub so Vercel redeploys. Submit a test RSVP and check the **Responses** sheet.
+Push to GitHub so **Vercel** redeploys (the `/api/rsvp` route saves to Google Forms; it runs on Vercel, not on plain static hosting).
+
+Submit a test RSVP on the live site and check the **Responses** sheet.
 
 ## 5. View guests
 

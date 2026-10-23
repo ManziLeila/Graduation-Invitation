@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+form.html
+cookies.txt
+response.html
+last-post.html
 
 # Editor directories and files
 .vscode/*
