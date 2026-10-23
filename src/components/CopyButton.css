@@ -1,0 +1,17 @@
+.copy-btn {
+  margin: 0;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--color-border);
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.6875rem;
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  color: var(--color-text-muted);
+}

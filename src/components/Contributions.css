@@ -1,0 +1,115 @@
+.contributions__subtitle {
+  margin: -1rem 0 var(--space-lg);
+  max-width: 36rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.contributions__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .contributions__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+  }
+}
+
+.contributions__card {
+  padding: var(--space-lg);
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+}
+
+.contributions__card-title {
+  margin: 0 0 var(--space-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+}
+
+.contributions__momo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contributions__momo-row {
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.contributions__momo-row:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.contributions__momo-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  margin-bottom: var(--space-sm);
+}
+
+.contributions__momo-name {
+  font-size: 1.0625rem;
+}
+
+.contributions__momo-note {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.contributions__momo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.contributions__momo-number {
+  font-size: clamp(1.375rem, 4vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+}
+
+.contributions__send {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--color-border);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.contributions__bank-line {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+.contributions__account {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-hairline);
+}
+
+.contributions__account-number {
+  font-size: clamp(1.25rem, 3.5vw, 1.625rem);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+}

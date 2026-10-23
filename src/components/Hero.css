@@ -1,0 +1,37 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+}
+
+.hero__inner {
+  max-width: var(--max-width);
+}
+
+.hero__tagline {
+  margin: 0 0 var(--space-md);
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero__name {
+  margin: 0 0 var(--space-lg);
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.hero__invitation {
+  margin: 0 auto;
+  max-width: 32rem;
+  font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
+  line-height: 1.65;
+}
