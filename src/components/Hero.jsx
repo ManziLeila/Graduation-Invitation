@@ -18,6 +18,9 @@ export default function Hero() {
         </h1>
         <p className="hero__degree">{localized(config.degree, lang)}</p>
         <p className="hero__invitation">{t('heroInvitation')}</p>
+        <blockquote className="hero__quote">
+          <p>{t('heroQuote')}</p>
+        </blockquote>
         <Countdown />
       </div>
     </section>

@@ -154,3 +154,40 @@ main {
     transition: none;
   }
 }
+
+@media print {
+  .skip-link,
+  .site-header,
+  .photo-gate,
+  .countdown,
+  .calendar-actions,
+  .rsvp__form,
+  .contributions__send,
+  .copy-btn {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  .section {
+    padding: 1rem 0;
+    break-inside: avoid;
+  }
+
+  .section--alt {
+    background: #fff;
+  }
+
+  a[href]::after {
+    content: ' (' attr(href) ')';
+    font-size: 9pt;
+  }
+
+  .hero__name {
+    font-size: 22pt;
+  }
+}

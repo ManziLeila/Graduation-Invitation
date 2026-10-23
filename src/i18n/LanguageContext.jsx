@@ -1,5 +1,22 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import config from '../config';
 import { SUPPORTED_LANGS, STORAGE_KEY, translations } from './translations';
+
+function setMetaContent(selector, content) {
+  if (!content) return;
+  let el = document.querySelector(selector);
+  if (!el) {
+    const isOg = selector.includes('property=');
+    el = document.createElement('meta');
+    if (isOg) {
+      el.setAttribute('property', selector.match(/property="([^"]+)"/)[1]);
+    } else {
+      el.setAttribute('name', selector.match(/name="([^"]+)"/)[1]);
+    }
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', content);
+}
 
 const LanguageContext = createContext(null);
 
@@ -46,6 +63,15 @@ export function LanguageProvider({ children }) {
   useEffect(() => {
     document.documentElement.lang = lang;
     document.title = t('pageTitle');
+    const base = config.siteUrl?.replace(/\/$/, '') ?? '';
+    const ogImage = base && config.ogImagePath ? `${base}${config.ogImagePath}` : '';
+    setMetaContent('meta[name="description"]', t('shareText'));
+    setMetaContent('meta[property="og:title"]', t('pageTitle'));
+    setMetaContent('meta[property="og:description"]', t('shareText'));
+    if (ogImage) setMetaContent('meta[property="og:image"]', ogImage);
+    setMetaContent('meta[name="twitter:title"]', t('pageTitle'));
+    setMetaContent('meta[name="twitter:description"]', t('shareText'));
+    if (ogImage) setMetaContent('meta[name="twitter:image"]', ogImage);
   }, [lang, t]);
 
   const value = useMemo(() => ({ lang, setLang, t }), [lang, setLang, t]);

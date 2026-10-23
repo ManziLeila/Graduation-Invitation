@@ -134,6 +134,10 @@ export default function Rsvp() {
               {t('formSubmit')}
             </button>
             <p className="rsvp__helper">{t('rsvpHelper')}</p>
+            <p className="rsvp__phone-alt">
+              {t('rsvpPhoneLabel')}{' '}
+              <a href={`tel:+${config.whatsappNumber}`}>{config.phoneDisplay}</a>
+            </p>
           </form>
         </div>
       </div>

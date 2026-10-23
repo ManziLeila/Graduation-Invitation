@@ -109,3 +109,14 @@
   font-style: italic;
   line-height: 1.5;
 }
+
+.rsvp__phone-alt {
+  margin: var(--space-sm) 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.rsvp__phone-alt a {
+  font-weight: 600;
+  text-decoration: underline;
+}

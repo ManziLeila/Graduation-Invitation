@@ -44,3 +44,18 @@
   font-size: clamp(1.0625rem, 2.5vw, 1.25rem);
   line-height: 1.65;
 }
+
+.hero__quote {
+  margin: var(--space-lg) auto 0;
+  max-width: 28rem;
+  padding: 0;
+  border: none;
+}
+
+.hero__quote p {
+  margin: 0;
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}

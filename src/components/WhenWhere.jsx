@@ -2,6 +2,7 @@ import config from '../config';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useReveal } from '../hooks/useReveal';
 import { localized } from '../utils/localized';
+import CalendarActions from './CalendarActions';
 import './WhenWhere.css';
 
 function formatDateHeading(dateStr, t) {
@@ -64,6 +65,7 @@ export default function WhenWhere() {
             );
           })}
         </ul>
+        <CalendarActions />
       </div>
     </section>
   );

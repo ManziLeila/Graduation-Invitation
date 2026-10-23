@@ -2,8 +2,15 @@
  * Edit this file with your personal details. Components read only from here.
  */
 const config = {
+  siteUrl: 'https://graduation-invitation-one-teal.vercel.app',
+  ogImagePath: '/photos/1.jpeg',
   name: 'Keza Manzi Leila',
   initials: 'KML',
+  phoneDisplay: '+250 786 201 066',
+  eventDurationMinutes: {
+    ceremony: 120,
+    reception: 180,
+  },
   degree: {
     en: "Bachelor's Degree, Adventist University of Central Africa",
     fr: "Licence, Université Adventiste d'Afrique Centrale",

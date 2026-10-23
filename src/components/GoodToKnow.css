@@ -1,0 +1,20 @@
+.good-to-know__inner {
+  max-width: var(--max-width);
+}
+
+.good-to-know__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.good-to-know__list li {
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-hairline);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.good-to-know__list li:last-child {
+  border-bottom: 1px solid var(--color-hairline);
+}
