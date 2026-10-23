@@ -65,7 +65,7 @@ function postViaHiddenIframe(actionUrl, fields) {
       form.remove();
       iframe.remove();
       resolve();
-    }, 1600);
+    }, 2800);
   });
 }
 

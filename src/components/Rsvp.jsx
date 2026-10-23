@@ -5,6 +5,16 @@ import { useReveal } from '../hooks/useReveal';
 import { isGoogleFormConfigured, submitGoogleForm } from '../utils/submitGoogleForm';
 import './Rsvp.css';
 
+function openWhatsApp(url) {
+  const link = document.createElement('a');
+  link.href = url;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+}
+
 function buildWhatsAppMessage(t, { name, attendance, phone, note }) {
   const attendanceLabel =
     attendance === 'yes' ? t('whatsappAttending') : t('whatsappDeclining');
@@ -54,7 +64,6 @@ export default function Rsvp() {
           note: note.trim(),
           lang,
         });
-        await new Promise((r) => window.setTimeout(r, 400));
       } catch {
         /* still open WhatsApp */
       }
@@ -67,12 +76,7 @@ export default function Rsvp() {
       note,
     });
     const url = `https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    const mobile = window.matchMedia('(max-width: 768px)').matches;
-    if (mobile) {
-      window.location.assign(url);
-    } else {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    }
+    openWhatsApp(url);
     setSubmitting(false);
   }
 
