@@ -99,8 +99,13 @@
   cursor: pointer;
 }
 
-.rsvp__submit:hover {
+.rsvp__submit:hover:not(:disabled) {
   background: var(--color-cream);
+}
+
+.rsvp__submit:disabled {
+  opacity: 0.65;
+  cursor: wait;
 }
 
 .rsvp__helper {

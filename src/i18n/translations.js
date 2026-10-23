@@ -36,8 +36,11 @@ export const translations = {
     formPhone: 'Phone (optional)',
     formNote: 'A note for me (optional)',
     formSubmit: 'Send via WhatsApp',
+    formSubmitting: 'Saving…',
     rsvpHelper:
       'Your reply opens in WhatsApp, ready to send. It is only sent once you press send.',
+    rsvpHelperWithSheet:
+      'Your response is saved to our guest list, then WhatsApp opens so you can send your message. Tap Send in WhatsApp to finish.',
     contributionsLabel: 'Gifts',
     contributionsHeading: 'If you wish to contribute',
     contributionsSubtitle:
@@ -146,8 +149,11 @@ export const translations = {
     formPhone: 'Téléphone (facultatif)',
     formNote: 'Un mot pour moi (facultatif)',
     formSubmit: 'Envoyer via WhatsApp',
+    formSubmitting: 'Enregistrement…',
     rsvpHelper:
       'Votre réponse s’ouvre dans WhatsApp, prête à envoyer. Elle n’est envoyée que lorsque vous appuyez sur Envoyer.',
+    rsvpHelperWithSheet:
+      'Votre réponse est enregistrée sur notre liste, puis WhatsApp s’ouvre. Appuyez sur Envoyer dans WhatsApp pour terminer.',
     contributionsLabel: 'Cadeaux',
     contributionsHeading: 'Si vous souhaitez contribuer',
     contributionsSubtitle:
@@ -256,8 +262,11 @@ export const translations = {
     formPhone: 'Telefone (si ngombwa)',
     formNote: 'Ubutumwa bwawe (si ngombwa)',
     formSubmit: 'Ohereza kuri WhatsApp',
+    formSubmitting: 'Birimo kubikwa…',
     rsvpHelper:
       'Igisubizo cyawe gifungura muri WhatsApp, cyiteguye koherezwa. Gikoherezwa gusa iyo ukande Kohereza.',
+    rsvpHelperWithSheet:
+      'Igisubizo cyawe cyabitswe ku rutonde rw’abashyitsi, hanyuma WhatsApp ifunguka. Kanda Kohereza muri WhatsApp kurangiza.',
     contributionsLabel: 'Impano',
     contributionsHeading: 'Niba ushaka gutanga umusanzu',
     contributionsSubtitle:

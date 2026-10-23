@@ -2,6 +2,7 @@ import { useState } from 'react';
 import config from '../config';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useReveal } from '../hooks/useReveal';
+import { isGoogleFormConfigured, submitGoogleForm } from '../utils/submitGoogleForm';
 import './Rsvp.css';
 
 function buildWhatsAppMessage(t, { name, attendance, phone, note }) {
@@ -19,13 +20,15 @@ function buildWhatsAppMessage(t, { name, attendance, phone, note }) {
 }
 
 export default function Rsvp() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const reveal = useReveal();
   const [name, setName] = useState('');
   const [attendance, setAttendance] = useState('');
   const [phone, setPhone] = useState('');
   const [note, setNote] = useState('');
   const [errors, setErrors] = useState({});
+  const [submitting, setSubmitting] = useState(false);
+  const savesToSheet = isGoogleFormConfigured(config.googleForm);
 
   function validate() {
     const next = {};
@@ -35,10 +38,34 @@ export default function Rsvp() {
     return Object.keys(next).length === 0;
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    if (!validate()) return;
-    const message = buildWhatsAppMessage(t, { name: name.trim(), attendance, phone, note });
+    if (!validate() || submitting) return;
+
+    setSubmitting(true);
+    const trimmedName = name.trim();
+
+    if (savesToSheet) {
+      try {
+        await submitGoogleForm(config.googleForm, {
+          name: trimmedName,
+          attendance,
+          phone: phone.trim(),
+          note: note.trim(),
+          lang,
+        });
+        await new Promise((r) => window.setTimeout(r, 400));
+      } catch {
+        /* still open WhatsApp */
+      }
+    }
+
+    const message = buildWhatsAppMessage(t, {
+      name: trimmedName,
+      attendance,
+      phone,
+      note,
+    });
     const url = `https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(message)}`;
     const mobile = window.matchMedia('(max-width: 768px)').matches;
     if (mobile) {
@@ -46,6 +73,7 @@ export default function Rsvp() {
     } else {
       window.open(url, '_blank', 'noopener,noreferrer');
     }
+    setSubmitting(false);
   }
 
   return (
@@ -130,10 +158,12 @@ export default function Rsvp() {
               />
             </div>
 
-            <button type="submit" className="rsvp__submit">
-              {t('formSubmit')}
+            <button type="submit" className="rsvp__submit" disabled={submitting}>
+              {submitting ? t('formSubmitting') : t('formSubmit')}
             </button>
-            <p className="rsvp__helper">{t('rsvpHelper')}</p>
+            <p className="rsvp__helper">
+              {savesToSheet ? t('rsvpHelperWithSheet') : t('rsvpHelper')}
+            </p>
             <p className="rsvp__phone-alt">
               {t('rsvpPhoneLabel')}{' '}
               <a href={`tel:+${config.whatsappNumber}`}>{config.phoneDisplay}</a>

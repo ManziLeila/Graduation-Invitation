@@ -55,6 +55,7 @@ const config = {
   googleForm: {
     actionUrl:
       'https://docs.google.com/forms/d/e/1FAIpQLSemgUtZHPILLJmsUBiZ5RzNLtioCxlxDN9jAI3yvGBT0EtesQ/formResponse',
+    fbzx: '4052624026479427693',
     entries: {
       name: 'entry.891082014',
       attendance: 'entry.84978969',
