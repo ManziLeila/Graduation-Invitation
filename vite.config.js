@@ -3,7 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  // GitHub project site: manzileila.github.io/Graduation-Invitation/
-  base: '/Graduation-Invitation/',
+  base: '/',
   plugins: [react()],
 })
