@@ -23,8 +23,9 @@
   letter-spacing: var(--label-tracking);
   text-transform: uppercase;
   text-decoration: underline;
-  text-underline-offset: 0.25em;
-  color: var(--color-text-muted);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+  color: var(--color-link);
 }
 
 .site-header__monogram {
@@ -62,17 +63,18 @@
 }
 
 .site-header__nav-link {
-  color: var(--color-text);
-  font-weight: 500;
+  color: var(--color-link);
+  font-weight: 600;
   text-decoration: none;
   padding: 0.2rem 0.1rem;
 }
 
 .site-header__nav-link[aria-current='true'] {
-  color: var(--color-terracotta);
+  color: var(--color-link);
   font-weight: 600;
   text-decoration: underline;
-  text-underline-offset: 0.25em;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
 }
 
 .site-header__nav-dot {

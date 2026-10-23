@@ -42,12 +42,17 @@
 }
 
 .when-where__directions {
+  display: inline-block;
+  margin-top: var(--space-xs);
+  padding: 0.35rem 0;
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: var(--label-tracking);
   text-transform: uppercase;
   text-decoration: underline;
-  color: var(--color-text-muted);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+  color: var(--color-link);
 }
 
 @media (min-width: 768px) {

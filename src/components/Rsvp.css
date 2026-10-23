@@ -117,6 +117,9 @@
 }
 
 .rsvp__phone-alt a {
+  color: var(--color-link);
   font-weight: 600;
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
 }

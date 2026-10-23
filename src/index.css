@@ -12,6 +12,7 @@
   --color-hairline: #718355;
   --color-hairline-soft: #97a97c;
   --color-border: #718355;
+  --color-link: #243019;
 
   --font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
 
@@ -68,13 +69,41 @@ img {
 }
 
 a {
-  color: inherit;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.25em;
+  font-weight: 600;
 }
 
 a:hover {
-  color: var(--color-text-muted);
+  color: var(--color-text);
+}
+
+a.photo-gate__enter {
+  color: var(--color-cream);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a.contributions__send,
+a.site-header__nav-link,
+a.site-header__monogram {
+  text-decoration: none;
+}
+
+a.contributions__send {
+  color: var(--color-link);
+  font-weight: 600;
+}
+
+a.site-header__nav-link[aria-current='true'] {
+  text-decoration: underline;
+}
+
+a.site-header__back {
+  color: var(--color-link);
+  text-decoration: underline;
 }
 
 :focus-visible {
