@@ -9,7 +9,7 @@ const config = {
   phoneDisplay: '+250 786 201 066',
   eventDurationMinutes: {
     ceremony: 120,
-    reception: 180,
+    reception: 360,
   },
   degree: {
     en: "Bachelor's Degree in Software Engineering, Adventist University of Central Africa",
@@ -44,47 +44,141 @@ const config = {
   playlist: {
     url: '',
   },
+  programIntro: {
+    en: 'Reception · KK 386 St, Kigali',
+    fr: 'Réception · KK 386 St, Kigali',
+    rw: 'Ibirori byo kwakira · KK 386 St, Kigali',
+  },
   program: [
     {
-      time: '08:45',
+      time: '15:30',
       title: {
-        en: 'Arrive & find your seat',
-        fr: 'Arrivée et installation',
-        rw: 'Kuza no kwicara',
-      },
-    },
-    {
-      time: '09:00',
-      title: {
-        en: 'Graduation ceremony',
-        fr: 'Cérémonie de remise des diplômes',
-        rw: 'Umuhango wo gutanga impamyabumenyi',
-      },
-    },
-    {
-      time: '11:30',
-      title: {
-        en: 'Photos & congratulations',
-        fr: 'Photos et félicitations',
-        rw: 'Amafoto n’ubwishimo',
+        en: 'Get things ready at Grandma’s',
+        fr: 'Préparer la maison de grand-mère',
+        rw: 'Gutegura ibirori iwa nyir’urugo',
       },
       note: {
-        en: 'After the ceremony on campus',
-        fr: 'Après la cérémonie sur le campus',
-        rw: 'Nyuma y’umuhango ku ishuri',
+        en: 'Chairs out, snacks and drinks set, music on',
+        fr: 'Chaises, collations, boissons et musique',
+        rw: 'Intebe, ibinyobwa, ibiribwa n’umuziki',
       },
     },
     {
       time: '16:00',
       title: {
-        en: 'Reception with family & friends',
-        fr: 'Réception en famille et entre amis',
-        rw: 'Ibirori byo kwakira abakunzi n’umuryango',
+        en: 'Everyone arrives',
+        fr: 'Arrivée des invités',
+        rw: 'Abashyitsi bagera',
       },
       note: {
-        en: 'KK 386 St — see map above',
-        fr: 'KK 386 St — voir la carte ci-dessus',
-        rw: 'KK 386 St — reba ikarita hejuru',
+        en: 'Hugs, drinks, snacks and catching up',
+        fr: 'Câlins, boissons, collations et retrouvailles',
+        rw: 'Gusuhura, ibinyobwa n’ibiribwa byoroshye',
+      },
+    },
+    {
+      time: '16:45',
+      title: {
+        en: 'Quick hello from the host',
+        fr: 'Mot de bienvenue de l’hôte',
+        rw: 'Ijambo rito ry’uwakiriye',
+      },
+      note: {
+        en: 'And a big cheer for the grad',
+        fr: 'Et une grande acclamation pour la diplômée',
+        rw: 'N’ishimwe rikomeye ku musomyi',
+      },
+    },
+    {
+      time: '17:00',
+      title: {
+        en: 'Family and friends say a few words',
+        fr: 'Quelques mots de la famille et des amis',
+        rw: 'Impuza n’inshuti bavuga amagambo make',
+      },
+      note: {
+        en: 'Short, sweet and funny is perfect',
+        fr: 'Court, sincère et un peu drôle — parfait',
+        rw: 'Bigufi, byiza kandi byishimo — ni byiza',
+      },
+    },
+    {
+      time: '17:45',
+      title: {
+        en: 'Photo time',
+        fr: 'Photos',
+        rw: 'Amafoto',
+      },
+      note: {
+        en: 'In the yard or garden, including one with Grandma',
+        fr: 'Dans le jardin, y compris une photo avec grand-mère',
+        rw: 'Mu busitani, harimo n’ifoto na nyir’urugo',
+      },
+    },
+    {
+      time: '18:30',
+      title: {
+        en: 'Dinner',
+        fr: 'Dîner',
+        rw: 'Ifunguro rya nimugoroba',
+      },
+      note: {
+        en: 'Grab a plate and enjoy',
+        fr: 'Servez-vous et bon appétit',
+        rw: 'Fata igikoni wishimire',
+      },
+    },
+    {
+      time: '19:30',
+      title: {
+        en: 'Cake and a toast to the grad',
+        fr: 'Gâteau et toast à la diplômée',
+        rw: 'Keke n’amata y’ishimwe ku musomyi',
+      },
+    },
+    {
+      time: '19:45',
+      title: {
+        en: 'Gifts and cards',
+        fr: 'Cadeaux et cartes',
+        rw: 'Impano n’amakarita',
+      },
+    },
+    {
+      time: '20:15',
+      title: {
+        en: 'The grad says thank you',
+        fr: 'Remerciements de la diplômée',
+        rw: 'Umusomyi avuga urakoze',
+      },
+    },
+    {
+      time: '20:30',
+      title: {
+        en: 'Music, games and dancing',
+        fr: 'Musique, jeux et danse',
+        rw: 'Umuziki, imikino no kubyina',
+      },
+    },
+    {
+      time: '21:45',
+      title: {
+        en: 'Last dance and goodbyes',
+        fr: 'Dernière danse et au revoir',
+        rw: 'Umuziki wa nyuma no kwiranganwa',
+      },
+    },
+    {
+      time: '22:00',
+      title: {
+        en: 'Party’s over',
+        fr: 'Fin de la fête',
+        rw: 'Ibirori birangiye',
+      },
+      note: {
+        en: 'Help Grandma tidy up',
+        fr: 'Aider grand-mère à ranger',
+        rw: 'Dufashe gukosora',
       },
     },
   ],
