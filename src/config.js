@@ -57,11 +57,6 @@ const config = {
         fr: 'Arrivée des invités',
         rw: 'Abashyitsi bagera',
       },
-      note: {
-        en: 'Hugs, drinks, snacks and catching up',
-        fr: 'Câlins, boissons, collations et retrouvailles',
-        rw: 'Gusuhura, ibinyobwa n’ibiribwa byoroshye',
-      },
     },
     {
       time: '16:45',
@@ -69,11 +64,6 @@ const config = {
         en: 'Quick hello from the host',
         fr: 'Mot de bienvenue de l’hôte',
         rw: 'Ijambo rito ry’uwakiriye',
-      },
-      note: {
-        en: 'And a big cheer for the grad',
-        fr: 'Et une grande acclamation pour la diplômée',
-        rw: 'N’ishimwe rikomeye ku musomyi',
       },
     },
     {
@@ -83,11 +73,6 @@ const config = {
         fr: 'Quelques mots de la famille et des amis',
         rw: 'Impuza n’inshuti bavuga amagambo make',
       },
-      note: {
-        en: 'Short, sweet and funny is perfect',
-        fr: 'Court, sincère et un peu drôle — parfait',
-        rw: 'Bigufi, byiza kandi byishimo — ni byiza',
-      },
     },
     {
       time: '17:45',
@@ -96,11 +81,6 @@ const config = {
         fr: 'Photos',
         rw: 'Amafoto',
       },
-      note: {
-        en: 'In the yard or garden, including one with Grandma',
-        fr: 'Dans le jardin, y compris une photo avec grand-mère',
-        rw: 'Mu busitani, harimo n’ifoto na nyir’urugo',
-      },
     },
     {
       time: '18:30',
@@ -108,11 +88,6 @@ const config = {
         en: 'Dinner',
         fr: 'Dîner',
         rw: 'Ifunguro rya nimugoroba',
-      },
-      note: {
-        en: 'Grab a plate and enjoy',
-        fr: 'Servez-vous et bon appétit',
-        rw: 'Fata igikoni wishimire',
       },
     },
     {
