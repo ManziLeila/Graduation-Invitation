@@ -33,31 +33,16 @@ export default function Agenda() {
           <p className="agenda__intro">{localized(config.programIntro, lang)}</p>
         ) : null}
 
-        <div className="agenda__card">
-          <div className="agenda__head" role="row">
-            <span className="agenda__th" role="columnheader">
-              {t('programTimeLabel')}
-            </span>
-            <span className="agenda__th" role="columnheader">
-              {t('programDetailsLabel')}
-            </span>
-          </div>
-          <ul className="agenda__list">
-            {steps.map((step) => (
-              <li key={`${step.time}-${localized(step.title, lang)}`} className="agenda__row">
-                <time className="agenda__time" dateTime={step.time}>
-                  {formatTime(step.time, lang, t)}
-                </time>
-                <div className="agenda__details">
-                  <p className="agenda__title">{localized(step.title, lang)}</p>
-                  {step.note ? (
-                    <p className="agenda__note">{localized(step.note, lang)}</p>
-                  ) : null}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="agenda__list">
+          {steps.map((step) => (
+            <li key={`${step.time}-${localized(step.title, lang)}`} className="agenda__row">
+              <time className="agenda__time" dateTime={step.time}>
+                {formatTime(step.time, lang, t)}
+              </time>
+              <p className="agenda__title">{localized(step.title, lang)}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
