@@ -40,15 +40,6 @@ const config = {
       rw: 'Niriwe mu birori byo mu Kigali n’abakunzi banjye',
     },
   ],
-  /** Spotify (or any) link — paste your playlist URL; button hidden if empty */
-  playlist: {
-    url: '',
-  },
-  thankYou: {
-    en: 'I cannot wait to see you on 15 November 2026 in Kigali. Thank you for walking with me on this journey — your presence will mean everything.',
-    fr: 'J’ai hâte de vous voir le 15 novembre 2026 à Kigali. Merci d’avoir marché à mes côtés — votre présence comptera énormément pour moi.',
-    rw: 'Ntegereje cyane kubonana nawe ku wa 15 Ugushyingo 2026 i Kigali. Urakoze k’uko wambereye uru rugendo — kuba hano bizaduhagararira cyane.',
-  },
   programIntro: {
     en: 'Reception · KK 386 St, Kigali',
     fr: 'Réception · KK 386 St, Kigali',

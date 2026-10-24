@@ -185,7 +185,6 @@ main {
   .countdown,
   .calendar-actions,
   .rsvp__form,
-  .closing__actions,
   .copy-btn {
     display: none !important;
   }
