@@ -9,7 +9,7 @@ const config = {
   phoneDisplay: '+250 786 201 066',
   eventDurationMinutes: {
     ceremony: 120,
-    reception: 360,
+    reception: 330,
   },
   degree: {
     en: "Bachelor's Degree in Software Engineering, Adventist University of Central Africa",
@@ -91,14 +91,6 @@ const config = {
       },
     },
     {
-      time: '19:45',
-      title: {
-        en: 'Gifts and cards',
-        fr: 'Cadeaux et cartes',
-        rw: 'Impano n’amakarita',
-      },
-    },
-    {
       time: '20:15',
       title: {
         en: 'The grad says thank you',
@@ -115,19 +107,11 @@ const config = {
       },
     },
     {
-      time: '21:45',
+      time: '21:30',
       title: {
         en: 'Last dance and goodbyes',
         fr: 'Dernière danse et au revoir',
         rw: 'Umuziki wa nyuma no kwiranganwa',
-      },
-    },
-    {
-      time: '22:00',
-      title: {
-        en: 'Party’s over',
-        fr: 'Fin de la fête',
-        rw: 'Ibirori birangiye',
       },
     },
   ],
