@@ -19,9 +19,9 @@ const config = {
   date: '2026-11-15',
   city: 'Kigali',
   about: {
-    en: 'I am Keza Manzi Leila — the second daughter of Manzi Eric and Uwase Yvette — and a software engineering graduate grateful for every lesson, late-night study session, and person who believed in me along the way. Above all, I thank God and my parents, whose love, prayers, and sacrifice carried me to this day. I would be honoured to celebrate this milestone with you.',
-    fr: 'Je suis Keza Manzi Leila — deuxième fille de Manzi Eric et Uwase Yvette — et diplômée en génie logiciel, reconnaissante pour chaque leçon, chaque nuit d’étude et chaque personne qui a cru en moi. Je remercie surtout Dieu et mes parents, dont l’amour, les prières et le sacrifice m’ont menée jusqu’ici. Ce serait un honneur de célébrer cette étape avec vous.',
-    rw: 'Nitwa Keza Manzi Leila — umukobwa wa kabiri wa Manzi Eric na Uwase Yvette — ndasoje amasomo mu guhanga porogaramu, nishimira buri somo, buri gihe cyo kwiga n’umuntu wese wanyizeye. By’umwihariko nishimira Imana n’ababyeyi banjye, urukundo rwabo, amasengesho n’ibyo batannye byampeye kugera aho ndi. Bizanyuzuzo ko twishimira iyi ntambwe hamwe.',
+    en: 'I am Keza Manzi Leila, a software engineering graduate grateful for every lesson, late-night study session, and person who believed in me along the way. I thank God and my parents, whose love, prayers, and sacrifice carried me to this day. I would be honoured to celebrate this milestone with you.',
+    fr: 'Je suis Keza Manzi Leila, diplômée en génie logiciel, reconnaissante pour chaque leçon, chaque nuit d’étude et chaque personne qui a cru en moi. Je remercie Dieu et mes parents, dont l’amour, les prières et le sacrifice m’ont menée jusqu’ici. Ce serait un honneur de célébrer cette étape avec vous.',
+    rw: 'Nitwa Keza Manzi Leila, ndasoje amasomo mu guhanga porogaramu, nishimira buri somo, buri gihe cyo kwiga n’umuntu wese wanyizeye. Nishimira Imana n’ababyeyi banjye, urukundo rwabo, amasengesho n’ibyo batannye byampeye kugera aho ndi. Bizanyuzuzo ko twishimira iyi ntambwe hamwe.',
   },
   highlights: [
     {
