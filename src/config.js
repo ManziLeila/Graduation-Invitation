@@ -34,11 +34,6 @@ const config = {
       fr: 'Passionnée par des technologies utiles et bien pensées',
       rw: 'Nkunda gukora ikoranabuhanga gifasha abantu neza',
     },
-    {
-      en: 'Celebrating in Kigali with the people I love most',
-      fr: 'Je célèbre à Kigali entourée des personnes que j’aime',
-      rw: 'Niriwe mu birori byo mu Kigali n’abakunzi banjye',
-    },
   ],
   programIntro: {
     en: 'Reception · KK 386 St, Kigali',
