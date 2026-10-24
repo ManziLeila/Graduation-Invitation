@@ -114,7 +114,6 @@ export const translations = {
     goodToKnowItems: [
       'Please arrive 15 minutes before the ceremony.',
       'Smart casual dress is warmly welcome.',
-      'The reception is at a different venue in the afternoon.',
       'Your RSVP on WhatsApp helps us prepare with joy.',
     ],
     calendarLabel: 'Calendar',
@@ -246,7 +245,6 @@ export const translations = {
     goodToKnowItems: [
       'Merci d’arriver 15 minutes avant la cérémonie.',
       'Tenue smart casual la bienvenue.',
-      'La réception a lieu dans un autre lieu l’après-midi.',
       'Votre RSVP sur WhatsApp nous aide à mieux vous accueillir.',
     ],
     calendarLabel: 'Agenda',
@@ -377,7 +375,6 @@ export const translations = {
     goodToKnowItems: [
       'Gera ku muhango iminota 15 mbere.',
       'Imyenda isanzwe-neza irakwiriye.',
-      'Ibirori byo kwakira biri ahantu hatandukanye nyuma ya saa kumi.',
       'Igisubizo cyawe kuri WhatsApp kidufasha kwitegura neza.',
     ],
     calendarLabel: 'Kalendari',
