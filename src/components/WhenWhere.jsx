@@ -65,39 +65,6 @@ export default function WhenWhere() {
             );
           })}
         </ul>
-        {(config.program?.length ?? 0) > 0 ? (
-          <>
-            <h3 className="when-where__program-heading">{t('programHeading')}</h3>
-            {config.programIntro ? (
-              <p className="when-where__program-intro">{localized(config.programIntro, lang)}</p>
-            ) : null}
-            <div className="when-where__program-table" role="table" aria-label={t('programHeading')}>
-              <div className="when-where__program-row when-where__program-row--head" role="row">
-                <span className="when-where__program-th" role="columnheader">
-                  {t('programTimeLabel')}
-                </span>
-                <span className="when-where__program-th" role="columnheader">
-                  {t('programDetailsLabel')}
-                </span>
-              </div>
-            </div>
-            <ul className="when-where__timeline when-where__timeline--program">
-              {config.program.map((step) => (
-                <li key={`${step.time}-${localized(step.title, lang)}`} className="when-where__row">
-                  <time className="when-where__time when-where__time--program" dateTime={step.time}>
-                    {formatTime(step.time, lang, t)}
-                  </time>
-                  <div className="when-where__details">
-                    <p className="when-where__program-title">{localized(step.title, lang)}</p>
-                    {step.note ? (
-                      <p className="when-where__program-note">{localized(step.note, lang)}</p>
-                    ) : null}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </>
-        ) : null}
         <CalendarActions />
       </div>
     </section>

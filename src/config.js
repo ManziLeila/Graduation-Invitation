@@ -51,19 +51,6 @@ const config = {
   },
   program: [
     {
-      time: '15:30',
-      title: {
-        en: 'Get things ready at Grandma’s',
-        fr: 'Préparer la maison de grand-mère',
-        rw: 'Gutegura ibirori iwa nyir’urugo',
-      },
-      note: {
-        en: 'Chairs out, snacks and drinks set, music on',
-        fr: 'Chaises, collations, boissons et musique',
-        rw: 'Intebe, ibinyobwa, ibiribwa n’umuziki',
-      },
-    },
-    {
       time: '16:00',
       title: {
         en: 'Everyone arrives',
@@ -174,11 +161,6 @@ const config = {
         en: 'Party’s over',
         fr: 'Fin de la fête',
         rw: 'Ibirori birangiye',
-      },
-      note: {
-        en: 'Help Grandma tidy up',
-        fr: 'Aider grand-mère à ranger',
-        rw: 'Dufashe gukosora',
       },
     },
   ],

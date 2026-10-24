@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import WhenWhere from './components/WhenWhere';
+import Agenda from './components/Agenda';
 import Rsvp from './components/Rsvp';
 import Wishes from './components/Wishes';
 import Footer from './components/Footer';
@@ -31,6 +32,7 @@ export default function App() {
         <About />
         <PhotoGallery />
         <WhenWhere />
+        <Agenda />
         <GoodToKnow />
         <Rsvp />
         <Wishes />
