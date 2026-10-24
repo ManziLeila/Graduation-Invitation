@@ -9,9 +9,8 @@ export default function About() {
   const reveal = useReveal();
   const bio = localized(config.about, lang);
   const highlights = config.highlights ?? [];
-  const playlistUrl = config.playlist?.url?.trim();
 
-  if (!bio && highlights.length === 0 && !playlistUrl) return null;
+  if (!bio && highlights.length === 0) return null;
 
   return (
     <section id="about" className="section section--alt about" aria-labelledby="about-heading">
@@ -27,16 +26,6 @@ export default function About() {
               <li key={localized(item, lang)}>{localized(item, lang)}</li>
             ))}
           </ul>
-        ) : null}
-        {playlistUrl ? (
-          <a
-            className="about__playlist"
-            href={playlistUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t('aboutPlaylist')}
-          </a>
         ) : null}
       </div>
     </section>

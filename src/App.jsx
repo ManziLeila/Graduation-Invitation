@@ -4,7 +4,7 @@ import About from './components/About';
 import WhenWhere from './components/WhenWhere';
 import Agenda from './components/Agenda';
 import Rsvp from './components/Rsvp';
-import Wishes from './components/Wishes';
+import Closing from './components/Closing';
 import Footer from './components/Footer';
 import PhotoGate from './components/PhotoGate';
 import PhotoGallery from './components/PhotoGallery';
@@ -35,7 +35,7 @@ export default function App() {
         <Agenda />
         <GoodToKnow />
         <Rsvp />
-        <Wishes />
+        <Closing />
         <ShareInvite />
       </main>
       <Footer />
