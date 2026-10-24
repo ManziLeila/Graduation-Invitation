@@ -1,8 +1,9 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import About from './components/About';
 import WhenWhere from './components/WhenWhere';
 import Rsvp from './components/Rsvp';
-import Contributions from './components/Contributions';
+import Wishes from './components/Wishes';
 import Footer from './components/Footer';
 import PhotoGate from './components/PhotoGate';
 import PhotoGallery from './components/PhotoGallery';
@@ -27,11 +28,12 @@ export default function App() {
       <Header />
       <main id="main-content">
         <Hero />
+        <About />
         <PhotoGallery />
         <WhenWhere />
         <GoodToKnow />
         <Rsvp />
-        <Contributions />
+        <Wishes />
         <ShareInvite />
       </main>
       <Footer />

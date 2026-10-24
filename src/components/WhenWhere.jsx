@@ -65,6 +65,26 @@ export default function WhenWhere() {
             );
           })}
         </ul>
+        {(config.program?.length ?? 0) > 0 ? (
+          <>
+            <h3 className="when-where__program-heading">{t('programHeading')}</h3>
+            <ul className="when-where__timeline when-where__timeline--program">
+              {config.program.map((step) => (
+                <li key={`${step.time}-${localized(step.title, lang)}`} className="when-where__row">
+                  <time className="when-where__time when-where__time--program" dateTime={step.time}>
+                    {formatTime(step.time, lang, t)}
+                  </time>
+                  <div className="when-where__details">
+                    <p className="when-where__program-title">{localized(step.title, lang)}</p>
+                    {step.note ? (
+                      <p className="when-where__program-note">{localized(step.note, lang)}</p>
+                    ) : null}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : null}
         <CalendarActions />
       </div>
     </section>

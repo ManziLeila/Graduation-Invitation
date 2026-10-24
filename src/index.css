@@ -86,15 +86,9 @@ a.photo-gate__enter {
   text-decoration: none;
 }
 
-a.contributions__send,
 a.site-header__nav-link,
 a.site-header__monogram {
   text-decoration: none;
-}
-
-a.contributions__send {
-  color: var(--color-link);
-  font-weight: 600;
 }
 
 a.site-header__nav-link[aria-current='true'] {
@@ -191,7 +185,7 @@ main {
   .countdown,
   .calendar-actions,
   .rsvp__form,
-  .contributions__send,
+  .wishes__form,
   .copy-btn {
     display: none !important;
   }

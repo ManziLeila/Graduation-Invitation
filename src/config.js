@@ -18,6 +18,76 @@ const config = {
   },
   date: '2026-11-15',
   city: 'Kigali',
+  about: {
+    en: 'I am Keza Manzi Leila — a software engineering graduate grateful for every lesson, late-night study session, and person who believed in me along the way.',
+    fr: 'Je suis Keza Manzi Leila — diplômée en génie logiciel, reconnaissante pour chaque leçon, chaque nuit d’étude et chaque personne qui a cru en moi.',
+    rw: 'Nitwa Keza Manzi Leila — ndasoje amasomo mu guhanga porogaramu, nishimira buri somo, buri gihe cyo kwiga n’umuntu wese wanyizeye.',
+  },
+  highlights: [
+    {
+      en: 'Bachelor’s in Software Engineering, AUCA',
+      fr: 'Licence en génie logiciel, AUCA',
+      rw: 'Impamyabumenyi mu guhanga porogaramu, AUCA',
+    },
+    {
+      en: 'Passionate about building thoughtful, useful technology',
+      fr: 'Passionnée par des technologies utiles et bien pensées',
+      rw: 'Nkunda gukora ikoranabuhanga gifasha abantu neza',
+    },
+    {
+      en: 'Celebrating in Kigali with the people I love most',
+      fr: 'Je célèbre à Kigali entourée des personnes que j’aime',
+      rw: 'Niriwe mu birori byo mu Kigali n’abakunzi banjye',
+    },
+  ],
+  /** Optional — leave url empty to hide the button */
+  playlist: {
+    url: '',
+  },
+  program: [
+    {
+      time: '08:45',
+      title: {
+        en: 'Arrive & find your seat',
+        fr: 'Arrivée et installation',
+        rw: 'Kuza no kwicara',
+      },
+    },
+    {
+      time: '09:00',
+      title: {
+        en: 'Graduation ceremony',
+        fr: 'Cérémonie de remise des diplômes',
+        rw: 'Umuhango wo gutanga impamyabumenyi',
+      },
+    },
+    {
+      time: '11:30',
+      title: {
+        en: 'Photos & congratulations',
+        fr: 'Photos et félicitations',
+        rw: 'Amafoto n’ubwishimo',
+      },
+      note: {
+        en: 'After the ceremony on campus',
+        fr: 'Après la cérémonie sur le campus',
+        rw: 'Nyuma y’umuhango ku ishuri',
+      },
+    },
+    {
+      time: '16:00',
+      title: {
+        en: 'Reception with family & friends',
+        fr: 'Réception en famille et entre amis',
+        rw: 'Ibirori byo kwakira abakunzi n’umuryango',
+      },
+      note: {
+        en: 'KK 386 St — see map above',
+        fr: 'KK 386 St — voir la carte ci-dessus',
+        rw: 'KK 386 St — reba ikarita hejuru',
+      },
+    },
+  ],
   photos: [
     { src: '/photos/1.jpeg', alt: 'Keza Manzi Leila' },
     { src: '/photos/2.jpeg', alt: 'Keza Manzi Leila' },
@@ -48,6 +118,8 @@ const config = {
     },
   ],
   whatsappNumber: '250786201066',
+  /** Optional — shown in “Share a blessing” (e.g. for graduation photos on social). */
+  celebrationHashtag: '#KezaGrad2026',
   /**
    * Google Form → linked Sheet. See GOOGLE_FORM_SETUP.md
    * Leave actionUrl empty until your form is ready.
@@ -65,23 +137,6 @@ const config = {
       yes: 'Joyfully accepts',
       no: 'Regretfully declines',
     },
-  },
-  momo: [
-    {
-      name: 'Keza Manzi Leila',
-      number: '0786201066',
-      note: '',
-    },
-  ],
-  bank: {
-    bank: {
-      en: 'Bank of Kigali',
-      fr: 'Bank of Kigali',
-      rw: 'Banki ya Kigali',
-    },
-    branch: '',
-    accountName: 'KEZA MANZI LEILA',
-    accountNumber: '100280178343',
   },
 };
 

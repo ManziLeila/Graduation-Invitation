@@ -4,7 +4,7 @@ Single-page, mobile-first graduation invitation in **English**, **French**, and 
 
 ## Customize
 
-1. **`src/config.js`** — Your name, initials, degree (per language), date (`YYYY-MM-DD`), events (time, venue, Google Maps URL), WhatsApp number (digits only), MTN MoMo entries, bank details, and optional **Google Form** URLs for RSVP storage.
+1. **`src/config.js`** — Your name, initials, degree (per language), date (`YYYY-MM-DD`), events (time, venue, Google Maps URL), WhatsApp number (digits only), optional celebration hashtag, and optional **Google Form** URLs for RSVP storage.
 2. **`GOOGLE_FORM_SETUP.md`** — Connect a Google Form + Sheet so every RSVP is saved before WhatsApp opens.
 3. **`src/i18n/translations.js`** — All UI copy and WhatsApp message labels in `en`, `fr`, and `rw`.
 4. **`index.html`** — Page title and Open Graph / Twitter descriptions.

@@ -4,16 +4,17 @@ import { useActiveSection } from '../hooks/useActiveSection';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Header.css';
 
-const SECTION_IDS = ['when-where', 'rsvp', 'contributions'];
+const SECTION_IDS = ['about', 'when-where', 'rsvp', 'wishes'];
 
 export default function Header() {
   const { t } = useLanguage();
   const activeId = useActiveSection(SECTION_IDS);
 
   const links = [
+    { id: 'about', label: t('navAbout') },
     { id: 'when-where', label: t('navWhenWhere') },
     { id: 'rsvp', label: t('navRsvp') },
-    { id: 'contributions', label: t('navContributions') },
+    { id: 'wishes', label: t('navWishes') },
   ];
 
   return (
