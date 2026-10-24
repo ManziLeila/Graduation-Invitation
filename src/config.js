@@ -75,14 +75,6 @@ const config = {
       },
     },
     {
-      time: '17:45',
-      title: {
-        en: 'Photo time',
-        fr: 'Photos',
-        rw: 'Amafoto',
-      },
-    },
-    {
       time: '18:30',
       title: {
         en: 'Dinner',
